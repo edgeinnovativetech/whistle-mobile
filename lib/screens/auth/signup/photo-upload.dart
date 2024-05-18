@@ -115,19 +115,13 @@ class PhotoUpload extends StatelessWidget {
                             height: double.infinity,
                             width: double.infinity,
                             decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                    Assets.images.uploadDefault.path,
+                                  ),
+                                  fit: BoxFit.cover),
                               shape: BoxShape.circle,
-                              color: Color(0xFFCCCCCC),
-                            ),
-                            child: Center(
-                              child: Text(
-                                'J',
-                                style: TextStyle(
-                                  fontFamily: FontFamily.creato,
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: height / 9.7083,
-                                  color: Color(0xFF898989),
-                                ),
-                              ),
+                              // color: Color(0xFFCCCCCC),
                             ),
                           ),
                           Positioned(
@@ -161,7 +155,7 @@ class PhotoUpload extends StatelessWidget {
 
                 // Second
                 RegisterContinueButton(
-                  text: "Save changes",
+                  text: "Set Profile Picture",
                   isVisible: false,
                   event: () => value.navigate(
                     context,

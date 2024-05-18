@@ -51,8 +51,20 @@ class $AssetsImagesGen {
   /// File path: assets/images/cancel.svg
   String get cancel => 'assets/images/cancel.svg';
 
+  /// File path: assets/images/chat.svg
+  String get chat => 'assets/images/chat.svg';
+
+  /// File path: assets/images/clap_filled.svg
+  String get clapFilled => 'assets/images/clap_filled.svg';
+
+  /// File path: assets/images/clap_unfilled.svg
+  String get clapUnfilled => 'assets/images/clap_unfilled.svg';
+
   /// File path: assets/images/close-circle.svg
   String get closeCircle => 'assets/images/close-circle.svg';
+
+  /// File path: assets/images/comments.svg
+  String get comments => 'assets/images/comments.svg';
 
   /// File path: assets/images/community-inactive.svg
   String get communityInactive => 'assets/images/community-inactive.svg';
@@ -62,6 +74,12 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/google-logo.svg
   String get googleLogo => 'assets/images/google-logo.svg';
+
+  /// File path: assets/images/heart_filled.svg
+  String get heartFilled => 'assets/images/heart_filled.svg';
+
+  /// File path: assets/images/heart_unfilled.svg
+  String get heartUnfilled => 'assets/images/heart_unfilled.svg';
 
   /// File path: assets/images/home-inactive.svg
   String get homeInactive => 'assets/images/home-inactive.svg';
@@ -93,6 +111,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/pay.svg
   String get pay => 'assets/images/pay.svg';
 
+  /// File path: assets/images/post_ellipsis_vertical.svg
+  String get postEllipsisVertical => 'assets/images/post_ellipsis_vertical.svg';
+
   /// File path: assets/images/privay.svg
   String get privay => 'assets/images/privay.svg';
 
@@ -114,8 +135,8 @@ class $AssetsImagesGen {
   /// File path: assets/images/slide2.png
   AssetGenImage get slide2 => const AssetGenImage('assets/images/slide2.png');
 
-  /// File path: assets/images/slide3.svg
-  String get slide3 => 'assets/images/slide3.svg';
+  /// File path: assets/images/slide3.png
+  AssetGenImage get slide3 => const AssetGenImage('assets/images/slide3.png');
 
   /// File path: assets/images/slide4.svg
   String get slide4 => 'assets/images/slide4.svg';
@@ -128,6 +149,10 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/tick-circle.svg
   String get tickCircle => 'assets/images/tick-circle.svg';
+
+  /// File path: assets/images/upload-default.png
+  AssetGenImage get uploadDefault =>
+      const AssetGenImage('assets/images/upload-default.png');
 
   /// List of all assets
   List<dynamic> get values => [
@@ -144,10 +169,16 @@ class $AssetsImagesGen {
         calendarEdit,
         call,
         cancel,
+        chat,
+        clapFilled,
+        clapUnfilled,
         closeCircle,
+        comments,
         communityInactive,
         community,
         googleLogo,
+        heartFilled,
+        heartUnfilled,
         homeInactive,
         home,
         inviteInactive,
@@ -158,6 +189,7 @@ class $AssetsImagesGen {
         noNotifications,
         payInactive,
         pay,
+        postEllipsisVertical,
         privay,
         profile,
         purposeStar,
@@ -169,7 +201,8 @@ class $AssetsImagesGen {
         slide4,
         sms,
         success,
-        tickCircle
+        tickCircle,
+        uploadDefault
       ];
 }
 

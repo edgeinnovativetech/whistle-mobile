@@ -91,7 +91,13 @@ class AuthTextField extends StatelessWidget {
             borderSide:
                 BorderSide(color: Color(0xFFD1D1D1), width: height / height),
           ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(height / 58.25),
+            borderSide:
+                BorderSide(color: Color(0xFFD1D1D1), width: height / height),
+          ),
         ),
+        cursorColor: Colors.black,
         style: TextStyle(
           fontFamily: FontFamily.creato,
           fontSize: height / 58.25,

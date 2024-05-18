@@ -43,7 +43,20 @@ class Home extends StatelessWidget {
                           // Settings Button
                           GestureDetector(
                             onTap: () => AppModals.showSettingsMenu(
-                                context, height, width),
+                              context,
+                              height,
+                              width,
+                              //Event 1
+                              () {},
+                              //Event 2
+                              () {},
+                              //Event 3
+                              () {},
+                              //Event 4
+                              () {},
+                              //Event 5
+                              () {},
+                            ),
                             child: SvgPicture.asset(Assets.images.settings),
                           ),
                         ],
@@ -210,6 +223,21 @@ class Home extends StatelessWidget {
 
                                   // Settings Button
                                   GestureDetector(
+                                    onTap: () => AppModals.showSettingsMenu(
+                                      context,
+                                      height,
+                                      width,
+                                      //Event 1
+                                      () {},
+                                      //Event 2
+                                      () {},
+                                      //Event 3
+                                      () {},
+                                      //Event 4
+                                      () {},
+                                      //Event 5
+                                      () {},
+                                    ),
                                     child: SvgPicture.asset(
                                         Assets.images.settings),
                                   ),

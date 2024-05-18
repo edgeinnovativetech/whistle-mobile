@@ -11,7 +11,8 @@ import 'package:whistle_mobile/screens/dashboard/invite/invite.dart';
 
 class AppState extends ChangeNotifier {
   // Booleans
-  bool isDataHomeEmpty = true;
+  bool isDataHomeEmpty = false;
+  bool isDataInviteEmpty = true;
 
   //Integers
   int dashboardCurrIndex = 0;
@@ -25,6 +26,7 @@ class AppState extends ChangeNotifier {
   final signupFirstname = TextEditingController();
   final signupLastname = TextEditingController();
   final signupPassword = TextEditingController();
+  final signupInvitationCode = TextEditingController();
   final signupSafetyEmail = TextEditingController();
   final signupEmergencyContact1 = TextEditingController();
   final signupEmergencyContact2 = TextEditingController();
@@ -72,8 +74,8 @@ class AppState extends ChangeNotifier {
       'title': "Build Community Interaction",
       'description':
           "Lorem ipsum dolor sit amet consectetur. Nec volutpat nunc lectus vivamus dolor. Dolor ultricies lacus volutpat nibh. Fermentum sit enim maecenas tincidunt",
-      'imagePath': Assets.images.slide3,
-      'imageType': "svg"
+      'imagePath': Assets.images.slide3.path,
+      'imageType': "png"
     },
     {
       'title': "Effortless Utility payments",
@@ -130,15 +132,19 @@ class AppState extends ChangeNotifier {
 
   void inlineNavigate(int index) {
     dashboardCurrIndex = navbarItems[index]['index'];
-    navbarItems[index]['isActive'] = !navbarItems[index]['isActive'];
     navbarItems.forEach(
       (element) {
         if (element['index'] != index) {
           element['isActive'] = false;
           notifyListeners();
+        } else {
+          element['isActive'] = true;
+          notifyListeners();
         }
       },
     );
+    print(
+        'passed index: ${index}, item index: ${navbarItems[index]['index']},');
     notifyListeners();
   }
 
